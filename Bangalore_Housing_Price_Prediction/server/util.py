@@ -32,7 +32,7 @@ def load_saved_artifacts():
     global __data_columns, __locations, __model
     with open('./artifacts/Housing_Data_Columns.json', 'rb') as data_col:
         __data_columns = json.load(data_col)['data_columns']
-        __locations = __data_columns[3:]
+        __locations = __data_columns[4:]
 
     with open('./artifacts/bangalore_housing_price_prediction_model.pickle', 'rb') as model_bhp:
         __model = pickle.load(model_bhp)
